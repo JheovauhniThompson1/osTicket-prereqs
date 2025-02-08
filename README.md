@@ -17,10 +17,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Created an Azure Virtual Machine and got Logged in.
+- Created an Azure Virtual Machine and got Logged in
 - Enabled IIS in Windows with CGI
-- Item 3
-- Item 4
+- Installed PHPManagerForIIS_V1.5.0.msi, rewrite_amd64_en-US.msi, VC_redist.x86.exe, and mysql-5.5.62-win32.msi
+- Created a "PHP" Folder in the C Drive(C:/), then unzipped php-7.3.8-nts-Win32-VC15-x86.zip into it
+- Registered PHP withing IIS 
+- Installed osTicket v1.15.8
 - Item 5
 
 <h2>Installation Steps</h2>
@@ -36,10 +38,27 @@ The first thing I did was construct a virtual machine in Azure rather than using
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/8348d27c-0db8-48d1-9bb2-108a9663c3f2"/>
+<img src="https://github.com/user-attachments/assets/817e7580-06b4-45e0-886c-b15dca5eb52a"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this stage, I entered the virtual machine, opened the control panel, navigated to Programs -> Programs and Features -> Turn Windows features on and off, and then selected Internet Information Services. I also expanded Internet Information Services, then expanded Application Development Features, and checked CGI.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/8bcc7486-696f-4107-9adc-82cb4f1bccc9"/>
+</p>
+<p>
+After installing the necessary external software to run osTicket, I registered PHP within IIS and reloaded it to ensure that everything was working properly.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/2452b20e-a24a-461d-a9d2-1e7890543e97"/>
+</p>
+<p>
+I then unzipped the osTicket-v1.15.8.zip file and transferred the "upload" folder to "c:\inetpub\wwwroot". After that, I renamed the "upload" folder to "osTicket".
 </p>
 <br />
 
@@ -47,6 +66,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After installing the necessary external software to run osTicket, I registered PHP within IIS and reloaded it to ensure that everything was working properly.
 </p>
 <br />
