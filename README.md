@@ -58,14 +58,21 @@ After installing the necessary external software to run osTicket, I registered P
 <img src="https://github.com/user-attachments/assets/2452b20e-a24a-461d-a9d2-1e7890543e97"/>
 </p>
 <p>
-I then unzipped the osTicket-v1.15.8.zip file and transferred the "upload" folder to "c:\inetpub\wwwroot". After that, I renamed the "upload" folder to "osTicket".
+I then unzipped the osTicket-v1.15.8.zip file and transferred the "upload" folder to "c:\inetpub\wwwroot". I then renamed the "upload" folder to "osTicket". I also had to restart the IIS server to ensure everything was working properly.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Before Extensions:
+</p>
+<img src="https://github.com/user-attachments/assets/bf8c2461-1e0b-4ee0-978d-0eeb98028722"/>
 </p>
 <p>
-After installing the necessary external software to run osTicket, I registered PHP within IIS and reloaded it to ensure that everything was working properly.
+After Extensions:
+</p>
+<img src="https://github.com/user-attachments/assets/436e8772-456c-4a20-8a5c-aca8685393f2"/>
+</p>
+<p>
+For this step, I returned to IIS, navigated to Sites -> Default Web Site -> osTicket, and then clicked "Browse *:80". This directed me to Microsoft Explorer, which opened  the osTicket web page. However, I found that I was missing a few extensions. To resolve this, I returned to IIS and navigated to Sites -> Default Web Site -> osTicket, then double-clicking PHP Manager, selecting Enable or disable an extension, and ultimately enabling php_imap.dll, php_intl.dll, and php_opcache.dll. I then refreshed my browser and discovered that I was no longer missing dependencies.
 </p>
 <br />
