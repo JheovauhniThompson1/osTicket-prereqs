@@ -10,6 +10,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
+- HeidiSQL
 
 <h2>Operating Systems Used </h2>
 
